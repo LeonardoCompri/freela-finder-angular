@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+FONT: https://fonts.google.com/specimen/Cabin?category=Sans+Serif&preview.text=Freela%20Finder&preview.text_type=custom
+
+99 Freelas login
+isrrael.diar@aladeen.org
+senha123
+
+DEMO: https://demos.creative-tim.com/paper-dashboard-angular/#/dashboard
