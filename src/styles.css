@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Montserrat';
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: rgb(210, 210, 210) !important;
+    text-decoration: none !important;
+}
+
+.faIcon {
+    font-size: 20px;
+}
+
+.dropdown-item:active{
+    background-color: unset !important;
+}
