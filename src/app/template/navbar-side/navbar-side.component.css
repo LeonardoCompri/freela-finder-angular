@@ -1,0 +1,16 @@
+.navsidebar{
+    min-height: 100%;
+}
+
+.faIcon {
+    font-weight: 300;
+}
+
+hr {
+    width: 100%;
+    border-color: #ffffff5e;
+}
+
+p {
+    font-weight: 300;
+}
