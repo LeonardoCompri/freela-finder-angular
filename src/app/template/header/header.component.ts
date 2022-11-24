@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBell, faGear } from '@fortawesome/free-solid-svg-icons';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +9,7 @@ import { faBell, faGear } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit {
 
   icons = {
-    faBell: faBell,
-    faGear: faGear
+    faCircleUser: faCircleUser
   }
 
   constructor() { }

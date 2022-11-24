@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHouse, faFolderOpen, faCommentDollar, faWallet, faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faFolderOpen, faCommentDollar, faWallet, faBell } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar-side',
@@ -13,7 +13,7 @@ export class NavbarSideComponent implements OnInit {
     faFolderOpen: faFolderOpen,
     faCommentDollar: faCommentDollar,
     faWallet: faWallet,
-    faCircleUser: faCircleUser
+    faBell: faBell
   }
 
   constructor() {
