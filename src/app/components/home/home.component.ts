@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from 'src/app/services/home/home.service';
+import { Projeto } from 'src/app/services/services';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  columns = [
+    {
+      name: "#"
+    },
+    {
+      name: "Cliente"
+    },
+    {
+      name: "Titulo"
+    },
+    {
+      name: "Status"
+    },
+    {
+      name: "Prazo para propostas"
+    }
+  ];
+
+  projects: Projeto[] = [];
+
+  constructor(
+    private _homeService: HomeService
+  ) { }
 
   ngOnInit(): void {
+    this._getData();
+  }
+
+  private _getData(){
+    this._homeService.getProjetos().subscribe(response => {
+      console.log(response);
+      this.projects = [...response];
+    });
   }
 
 }
