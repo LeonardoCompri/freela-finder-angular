@@ -1,3 +1,4 @@
+import { ProjectsModule } from './components/projects/projects.module';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,6 +10,7 @@ import { HeaderComponent } from './template/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarSideComponent } from './template/navbar-side/navbar-side.component';
 import { HomeModule } from './components/home/home.module';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { HomeModule } from './components/home/home.module';
     AppRoutingModule,
     RouterModule,
     FontAwesomeModule,
-    HomeModule
+    HomeModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

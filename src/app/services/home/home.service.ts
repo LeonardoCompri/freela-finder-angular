@@ -9,15 +9,12 @@ import { catchError, retry, throwError } from 'rxjs';
 export class HomeService {
 
   serviceUrl: string = "http://localhost:8080";
-  httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  }
 
   constructor(
     private _http: HttpClient
   ) { }
 
-  getProjetos() {
+  public getProjetos() {
     return this._http.get<Projeto[]>(this.serviceUrl + "/projeto/");
   }
 

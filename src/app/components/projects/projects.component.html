@@ -1,0 +1,32 @@
+<div class="container-fluid px-3">
+    <div class="row mt-3">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header">
+                  Projetos
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="text-align: center;" *ngFor="let column of columns">{{ column.name }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let project of projects">
+                                <th scope="row" style="text-align: right;">{{ project.id }}</th>
+                                <td>{{ project.cliente }}</td>
+                                <td>{{ project.titulo }}</td>
+                                <td style="text-align: center;">{{ project.status | projectStatus }}</td>
+                                <td style="text-align: right;">{{ project.prazoPropostas | date: "dd/MM/yyyy" }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>

@@ -39,7 +39,6 @@ export class HomeComponent implements OnInit {
 
   private _getData(){
     this._homeService.getProjetos().subscribe(response => {
-      console.log(response);
       this.projects = [...response];
     });
   }
